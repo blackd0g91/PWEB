@@ -1,0 +1,57 @@
+body {
+    padding: 2%;
+    background-color: antiquewhite;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    margin: 2% 0%
+}
+
+nav a {
+    margin-right: 2%;
+}
+
+section {
+    width: 60%
+}
+
+aside {
+    float:right;
+    width: 30%;
+}
+
+footer {
+    position: fixed;
+    bottom: 2%;
+}
+
+h2.ubuntu::before {
+    content: '';
+    background:url("https://assets.ubuntu.com/v1/1be42010-cof_orange_hex.jpg");
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-size: contain;
+}
+
+h2.arch::before {
+    content: '';
+    background:url("https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg");
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-size: contain;
+}
+
+h2.fedora::before {
+    content: '';
+    background:url("https://upload.wikimedia.org/wikipedia/commons/b/bd/Fedora-logo.svg");
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-size: contain;
+}
