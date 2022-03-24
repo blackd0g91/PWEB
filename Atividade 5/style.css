@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header{
+    background-color: darkslateblue;
+    height: 10vh;
+    text-align: center;
+}
+
+footer{
+    background-color: darkslateblue;
+    height: 50px;
+}
+
+footer p {
+    text-align: right;
+    margin-right: 2vw;
+}
+
+section{
+    display: flex;
+    min-height: calc(100vh - 50px - 10vh);
+}
+
+nav{
+    /* background-color:steelblue; */
+    flex-grow: 2;
+    overflow-y:auto;
+    padding: 5px;
+}
+
+aside{
+    background-color:burlywood;
+    flex-grow: 4;
+    flex-basis: min-content;
+    padding: 5px;
+    color: black;
+}
+
+aside h2 {
+    text-decoration: solid underline;
+    text-align: center;
+}
+
+aside h4 {
+    margin: 2vw;
+}
+
+aside a {
+    float: right;
+}
+
+/* Área Principal */
+
+article{
+    flex-grow: 6;
+    height: 84vh;
+    overflow-y:scroll;
+    flex-basis: min-content;
+}
+
+article::-webkit-scrollbar {
+    display: none;
+  }
+
+div.artigo {
+    margin: 10px;
+    background-color:antiquewhite;
+    min-height: 300px;
+    padding: 10px;
+}
+
+div.artigo h3 {
+    color: black;
+    text-align: center;
+}
+
+div.artigo p {
+    color: gray;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+/* Menu Lateral */
+
+section nav h2 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+section nav ul a {
+    text-decoration: none;
+}
+
+section nav ul a li {
+    background-color:darkslategrey;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 5px 5px -3vw;
+}
