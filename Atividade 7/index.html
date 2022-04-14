@@ -10,6 +10,11 @@
     <script>
         var jogador = prompt("Escolha uma das opções:\n1.Pedra\n2.Papel\n3.Tesoura");
 
+        if(jogador != 1 && jogador != 2 && jogador != 3){
+            alert("Seleção inválida. Tente novamente.");
+            location.reload();
+        }
+
         var oponente = Math.random();
 
         console.log(oponente);
@@ -35,6 +40,9 @@
         } else {
             alert(oponenteTexto + "\nDerrota");
         }
+
+        location.reload();
+        
         
     </script>
 </body>
